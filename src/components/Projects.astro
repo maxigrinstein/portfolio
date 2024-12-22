@@ -4,7 +4,8 @@ import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import AstroIcon from "./icons/AstroIcon.astro"
-import { deserializeActionResult } from "astro:actions"
+import CSharpIcon from "./icons/CSharpIcon.astro"
+import SqlIcon from "./icons/SqlServerIcon.astro"
 
 const TAGS = {
   ASTRO: {
@@ -17,7 +18,16 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
-
+  CSHARP: {
+    name: "C#",
+    class: "bg-violet-600 text-white",
+    icon: CSharpIcon,
+  },
+  SQL: {
+    name: "SQL Server",
+    class: "bg-gray-700 text-white",
+    icon: SqlIcon,
+  },
 }
 const PROJECTS = [
 {
@@ -36,6 +46,13 @@ const PROJECTS = [
     github: "https://github.com/maxigrinstein/porfolio.dev",
     image: "/projects/portfolio.webp",
     tags: [TAGS.ASTRO,TAGS.TAILWIND],
+  },
+  {
+    title: "Veterinary Clinic",
+    description: "A veterinary management system using C#, .NET Framework, and SQL Server Management. This project strengthened my technical and teamwork abilities.",
+    github: "https://github.com/SantinoOliveto/GestionVeterinaria",
+    image: "/projects/veterinary.webp",
+    tags: [TAGS.CSHARP, TAGS.SQL],
   }
   
 ]
