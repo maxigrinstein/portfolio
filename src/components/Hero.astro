@@ -1,0 +1,50 @@
+---
+const personalImageAlt = "Miguel Ángel"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+import GitHub from "./icons/GitHub.astro"
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-16"
+      src="/WhatsApp Image 2024-12-18 at 13.54.53.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://www.linkedin.com/in/maximiliano-grinstein-0a2772233/"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Available for work</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, I'm Maxi
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-green-300 [&>strong]:text-green-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+  Aspiring programmer with a <strong>passion for growth and lifelong learning. </strong>Currently pursuing a technical degree in programming. Excited to <strong>develop skills and tackle new challenges</strong> in the world of software development.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:grinsteinmaximiliano@gmail.com">
+      <MailIcon class="size-4" />
+      Contact Me
+    </SocialPill>
+    <SocialPill href="https://www.linkedin.com/in/maximiliano-grinstein-0a2772233/">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/maxigrinstein">
+      <GitHub class="size-4" />
+      GitHub
+    </SocialPill>
+  </nav>
+</div>

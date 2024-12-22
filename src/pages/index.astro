@@ -1,0 +1,39 @@
+---
+import Layout from "@/layouts/Layout.astro"
+import AboutMe from "@/components/AboutMe.astro"
+import CodeIcon from "@/components/icons/Code.astro"
+import ProfileCheck from "@/components/icons/ProfileCheck.astro"
+import Projects from "@/components/Projects.astro"
+import SectionContainer from "@/components/SectionContainer.astro"
+import Hero from "@/components/Hero.astro"
+import TitleSection from "@/components/TitleSection.astro"
+---
+
+<Layout
+  title="Maxi Grinstein's Portfolio - Programmer and Web Developer "
+  description="Hire Maxi Grinstein to build your next project."
+>
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <Hero >
+      </slot>
+    </Hero>
+    </SectionContainer>
+    <div class="space-y-24">
+    <SectionContainer id="projects">
+      <TitleSection>
+        <CodeIcon class="size-7" />
+        Projects
+      </TitleSection>
+      <Projects />
+    </SectionContainer>
+    <SectionContainer id="about-me">
+      <TitleSection>
+        <ProfileCheck class="size-8" />
+        About Me
+      </TitleSection>
+      <AboutMe />
+    </SectionContainer>
+  </div>
+  </main>
+</Layout>
